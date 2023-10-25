@@ -3,32 +3,50 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/rea
 import Navigator from './Navigator';
 import MyCalendar from './Calender';
 import MyTimesheet from './Timesheet';
+import Logout from './Logout';
 
 function App() {
   return (
     <Router>
         <div className="App">
-            <Navigator/>
             <Switch>
                 <Route exact path="/">
-                    Home Page
+                    <Navigator/>
+                    <div className="container">
+                        Home Page
+                    </div>
                 </Route>
                 <Route exact path="/calender">
+                    <Navigator/>
                     <MyCalendar/>
                 </Route>
                 <Route exact path="/projects">
+                    <Navigator/>
                     Projects
                 </Route>
                 <Route exact path="/profile">
+                    <Navigator/>
                     Profile
                 </Route>
                 <Route exact path="/timesheet">
+                    <Navigator/>
                     <MyTimesheet/>
                 </Route>
                 <Route exact path="/focus">
+                    <Navigator/>
                     Focus Mode
                 </Route>
+                <Route exact path="/login">
+                    LogIn
+                </Route>
+                <Route exact path="/signup">
+                    SignUp
+                </Route>
+                <Route exact path="/logout">
+                    <Logout/>
+                </Route>
                 <Route path="*">
+                    <Navigator/>
                     Error 404 Not Found
                 </Route>
             </Switch>

@@ -25,5 +25,43 @@ a
 
 :root
 {
-    --main-color: #a405e3
+    --main-color: #a405e3;
+    --nav-width: 250px;
+    --nav-close-width: 50px
 }
+
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: auto;
+}
+
+@media (min-width: 576px) { 
+    .container {
+        width: calc(550px - var(--nav-close-width));
+    }
+ }
+
+@media (min-width: 768px) { 
+    .container {
+        width: calc(752px - var(--nav-width));
+    }  
+ }
+
+@media (min-width: 992px) { 
+    .container {
+        width: calc(974px - var(--nav-width));
+    }  
+ }
+
+@media (min-width: 1200px) { 
+    .container {
+        width: calc(1184px - var(--nav-width));
+    }    
+ }
+
+@media (min-width: 1400px) { 
+    .container {
+        width: calc(1284px - var(--nav-width));
+    }    
+ }

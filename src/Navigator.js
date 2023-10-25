@@ -23,15 +23,22 @@ const Navigator = () => {
       }, []);
     
     useEffect(() => {
+        let customNavWidth = '250px';
         if (toggle === 'close')
         {
+            customNavWidth = '50px'
+            document.documentElement.style.setProperty('--nav-width', customNavWidth);
             document.body.style.paddingLeft = '60px';
         }
         else
         {
             if (windowWidth > 992) {
+                customNavWidth = '250px'
+                document.documentElement.style.setProperty('--nav-width', customNavWidth);
                 document.body.style.paddingLeft = '260px';
               } else if (windowWidth > 768) {
+                customNavWidth = '210px'
+                document.documentElement.style.setProperty('--nav-width', customNavWidth);
                 document.body.style.paddingLeft = '220px';
               } else {
                 document.body.style.paddingLeft = '60px';
@@ -42,38 +49,48 @@ const Navigator = () => {
 
 
     const toggleNavigator = () => {
+        let customNavWidth = '250px';
         if (toggle === 'open')
         {
             setToggle('close')
+            customNavWidth = '50px'
+            document.documentElement.style.setProperty('--nav-width', customNavWidth);
             document.body.style.paddingLeft = '60px';
-            console.log(toggle)
         }
         else
         {
             setToggle('open')
             if (window.innerWidth > 768)
             {
+                customNavWidth = '250px'
+                document.documentElement.style.setProperty('--nav-width', customNavWidth);
                 document.body.style.paddingLeft = '260px';
             }
-            console.log(toggle)
         }
     }
 
     useEffect (() => {    
+        let customNavWidth = '250px';
         if (window.innerWidth > 768)
         {
             setToggle('open')
             if (window.innerWidth > 992)
             {
+                customNavWidth = '250px'
+                document.documentElement.style.setProperty('--nav-width', customNavWidth);    
                 document.body.style.paddingLeft = '260px';
             }
             else
             {
+                customNavWidth = '210px'
+                document.documentElement.style.setProperty('--nav-width', customNavWidth);    
                 document.body.style.paddingLeft = '220px'
             }
         }
         else
         {
+            customNavWidth = '50px'
+            document.documentElement.style.setProperty('--nav-width', customNavWidth);    
             document.body.style.paddingLeft = '60px';
         }
     }, []);
