@@ -11,9 +11,10 @@ nav
     transition: 0.5s;
     overflow-y: auto;
     overflow-x: hidden;
+    z-index: 99;
 }
 
-ul
+nav ul
 {
     padding: 0;
     display: flex;
@@ -22,7 +23,7 @@ ul
     margin-top: 40px;
 }
 
-li
+nav ul li
 {
     list-style-type: none;
     margin: auto;
@@ -31,7 +32,7 @@ li
     justify-content: center;
 }
 
-li a
+nav ul li a
 {
     display: inline-block;
     color: var(--main-color);
@@ -44,7 +45,7 @@ li a
     transition: 0.5s;
 }
 
-li svg
+nav ul li svg
 {
     margin-right: 8px;
     fill: var(--main-color);
@@ -52,47 +53,47 @@ li svg
     height: 20px;
 }
 
-.logo
+nav .logo
 {
     padding-left: 24px;
     font-size: 20px;
 }
 
-a.imglogo
+nav a.imglogo
 {
     font-weight: bold;
     color: white;
 }
 
-.logo svg {
+nav .logo svg {
     fill: white;
 }
 
-a.textlogo
+nav a.textlogo
 {
     font-weight: bold;
     color: white;
     margin-left: 8px;
 }
 
-a.active-link
+nav a.active-link
 {
     background-color: #333;
     color: white;
     font-weight: bold;
 }
 
-a.active-link svg
+nav a.active-link svg
 {
     fill: white;
 }
 
-li a:hover
+nav li a:hover
 {
     width: 90%;
 }
 
-button
+nav button
 {
     background-color: white;
     border: 1px solid var(--main-color);
@@ -106,7 +107,7 @@ button
     z-index: 88;
 }
 
-.toggle
+nav .toggle
 {
     fill: #333;
     transform: translateY(2px);

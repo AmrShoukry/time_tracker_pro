@@ -1,0 +1,10 @@
+.rbc-today
+{
+    background-color: var(--main-color);
+    opacity: 0.1;
+}
+
+.rbc-date-cell button
+{
+    margin-bottom: 8px;
+}

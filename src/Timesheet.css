@@ -1,0 +1,10 @@
+#chart h1
+{
+    text-align: center;
+}
+
+.apexcharts-series path
+{
+    fill: var(--main-color);
+    opacity: 0.4
+}

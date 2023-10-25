@@ -1,6 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import Navigator from './Navigator';
+import MyCalendar from './Calender';
+import MyTimesheet from './Timesheet';
 
 function App() {
   return (
@@ -12,7 +14,7 @@ function App() {
                     Home Page
                 </Route>
                 <Route exact path="/calender">
-                    Calender
+                    <MyCalendar/>
                 </Route>
                 <Route exact path="/projects">
                     Projects
@@ -21,7 +23,7 @@ function App() {
                     Profile
                 </Route>
                 <Route exact path="/timesheet">
-                    Timesheet
+                    <MyTimesheet/>
                 </Route>
                 <Route exact path="/focus">
                     Focus Mode
