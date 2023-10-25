@@ -1,0 +1,184 @@
+nav
+{
+    background-color: var(--main-color);
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 0 15px 15px 0;
+    padding: 20px 0;
+    transition: 0.5s;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+ul
+{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+li
+{
+    list-style-type: none;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+li a
+{
+    display: inline-block;
+    color: var(--main-color);
+    background-color: white;
+    padding: 20px 24px;
+    width: 80%;
+    height: 100%;
+    border-radius: 15px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+li svg
+{
+    margin-right: 8px;
+    fill: var(--main-color);
+    width: 20px;
+    height: 20px;
+}
+
+.logo
+{
+    padding-left: 24px;
+    font-size: 20px;
+}
+
+a.imglogo
+{
+    font-weight: bold;
+    color: white;
+}
+
+.logo svg {
+    fill: white;
+}
+
+a.textlogo
+{
+    font-weight: bold;
+    color: white;
+    margin-left: 8px;
+}
+
+a.active-link
+{
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+a.active-link svg
+{
+    fill: white;
+}
+
+li a:hover
+{
+    width: 90%;
+}
+
+button
+{
+    background-color: white;
+    border: 1px solid var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    padding: 7px 7px 7px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 88;
+}
+
+.toggle
+{
+    fill: #333;
+    transform: translateY(2px);
+}
+
+nav.close
+{
+    width: 50px;
+    border-radius: 0 5px 5px 0;
+}
+
+nav.close .logo
+{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav.close .logo .imglogo
+{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+nav.close .logo .textlogo
+{
+    display: none;
+}
+
+nav.close ul li span
+{
+    display: none;
+}
+
+nav.close ul li 
+{
+    width: fit-content;
+}
+
+nav.close ul li a
+{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav.close ul li a:hover
+{
+    width: 80%;
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #d4d4d4; /* Change the background color */
+  }
+  
+
+
+@media (max-width:992px) {
+    nav
+    {
+        width: 210px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .logo
+    {
+        font-size: 16px;
+    }
+
+}
