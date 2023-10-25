@@ -4,6 +4,8 @@ import Navigator from './Navigator';
 import MyCalendar from './Calender';
 import MyTimesheet from './Timesheet';
 import Logout from './Logout';
+import Login from './Login';
+import Signup from './Signup';
 
 function App() {
   return (
@@ -37,10 +39,10 @@ function App() {
                     Focus Mode
                 </Route>
                 <Route exact path="/login">
-                    LogIn
+                    <Login/>
                 </Route>
                 <Route exact path="/signup">
-                    SignUp
+                    <Signup/>
                 </Route>
                 <Route exact path="/logout">
                     <Logout/>

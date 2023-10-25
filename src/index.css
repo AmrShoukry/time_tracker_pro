@@ -26,6 +26,7 @@ a
 :root
 {
     --main-color: #a405e3;
+    --main-color-transparent: #a405e344;
     --nav-width: 250px;
     --nav-close-width: 50px
 }

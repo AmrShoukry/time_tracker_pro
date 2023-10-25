@@ -1,0 +1,72 @@
+form.Sign h1
+{
+    text-align: center;
+    margin-bottom: 32px;
+}
+form.Sign .form-control
+{
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 32px;
+}
+
+form.Sign .form-control input
+{
+    border: 2px solid var(--main-color-transparent);   
+    padding: 16px;
+    flex-grow: 1;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+form.Sign .form-control label
+{
+    background-color: var(--main-color-transparent);
+    padding: 16px;
+}
+
+form.Sign .form-control label svg
+{
+    width: 16px;
+    height: 16px;
+}
+
+form.Sign .form-control input:focus
+{
+    outline: 0;
+    border: 2px solid var(--main-color);   
+}
+
+
+form.Sign .name
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+form.Sign input[type='submit']
+{
+    background-color: var(--main-color);
+    color: white;
+    border: 0;
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+form.Sign input[type='submit']:hover
+{
+    padding: 16px 64px;
+}
+
+form.Sign .logIn
+{
+    color: var(--main-color);
+}
