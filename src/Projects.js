@@ -1,6 +1,7 @@
 import './Projects.css'
 import portfolioImage from './images/projects.jpg';
 // import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 
 
 function setActive(e)
@@ -17,6 +18,11 @@ function setActive(e)
 
     e.target.classList.add('active');
     document.querySelector(`.projects .workingArea .${e.target.classList[0].split('-')[0]}-div`).classList.add('active');
+}
+
+function removeProject(e)
+{
+    e.target.parentNode.remove()
 }
 
 const Projects = () => {
@@ -55,7 +61,7 @@ const Projects = () => {
                                         <h5>From: &nbsp;<span>2023/11/01 - 07:14 AM</span></h5>
                                         <h5>To: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2023/11/27 - 12:01 PM</span></h5>
                                     </div>
-                                    <button className="delete">X</button>
+                                    <button onClick={(e) => removeProject(e)} className="delete">X</button>
                                 </div>
                                 <div className="project">
                                 <h3 className='name'>Studying A new Technology</h3>
@@ -64,7 +70,7 @@ const Projects = () => {
                                         <h5>From: &nbsp;<span>2023/12/01 - 07:14 AM</span></h5>
                                         <h5>To: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2023/12/07 - 12:01 PM</span></h5>
                                     </div>
-                                    <button className="delete">X</button>
+                                    <button onClick={(e) => removeProject(e)} className="delete">X</button>
                                 </div>
                                 <div className="project">
                                 <h3 className='name'>Studying A new Technology</h3>
@@ -73,7 +79,7 @@ const Projects = () => {
                                         <h5>From: &nbsp;<span>2023/12/01 - 07:14 AM</span></h5>
                                         <h5>To: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2023/12/07 - 12:01 PM</span></h5>
                                     </div>
-                                    <button className="delete">X</button>
+                                    <button onClick={(e) => removeProject(e)} className="delete">X</button>
                                 </div>
                                 <div className="project">
                                 <h3 className='name'>Studying A new Technology</h3>
@@ -82,12 +88,12 @@ const Projects = () => {
                                         <h5>From: &nbsp;<span>2023/12/01 - 07:14 AM</span></h5>
                                         <h5>To: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2023/12/07 - 12:01 PM</span></h5>
                                     </div>
-                                    <button className="delete">X</button>
+                                    <button onClick={(e) => removeProject(e)} className="delete">X</button>
                                 </div>
 
                             </div>
 
-                            <button className="addProject">Add Project</button>
+                            <Link to="./projects/new" className="addProject">Add Project</Link>
                         </div>
                     </div>
                     <div className="completed-div">
@@ -101,7 +107,7 @@ const Projects = () => {
                                         <h5>From: &nbsp;<span>2023/11/01 - 07:14 AM</span></h5>
                                         <h5>To: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2023/11/27 - 12:01 PM</span></h5>
                                     </div>
-                                    <button className="delete">X</button>
+                                    <button onClick={(e) => removeProject(e)} className="delete">X</button>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +123,7 @@ const Projects = () => {
                                         <h5>From: &nbsp;<span>2023/11/01 - 07:14 AM</span></h5>
                                         <h5>To: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2023/11/27 - 12:01 PM</span></h5>
                                     </div>
-                                    <button className="delete">X</button>
+                                    <button onClick={(e) => removeProject(e)} className="delete">X</button>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,78 @@
+.newProject
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form#new .inputs
+{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px 0;
+}
+
+form#new .inputs input,
+form#new .inputs textarea 
+{
+    padding: 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color-transparent);
+    transition: 0.5s;
+}
+
+form#new .inputs input:focus,
+form#new .inputs textarea:focus
+{
+    border: 2px solid var(--main-color);
+} 
+
+form#new textarea
+{
+    width: 100%;
+    display: block;
+    resize: none;
+}
+
+form#new textarea:focus,
+form#new input:focus
+{
+    outline: none;
+}
+
+form#new input[type="text"]
+{
+    display: block;
+    width: 100%;
+}
+
+form#new .dates
+{
+    display: flex;
+    gap: 16px;
+}
+
+form#new .dates input 
+{
+    flex-grow: 1;
+}
+
+form#new input[type="submit"]
+{
+    display: block;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+form#new input[type="submit"]:hover
+{
+    padding: 12px 48px;
+}

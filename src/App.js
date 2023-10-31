@@ -8,6 +8,9 @@ import Login from './Login';
 import Signup from './Signup';
 import Projects from './Projects';
 import Focus from './Focus';
+import Profile from './Profile';
+import Home from './Home';
+import Newproject from './ProjectNew';
 
 function App() {
   return (
@@ -16,9 +19,11 @@ function App() {
             <Switch>
                 <Route exact path="/">
                     <Navigator/>
-                    <div className="container">
-                        Home Page
-                    </div>
+                    <Home/>
+                </Route>
+                <Route exact path="/home">
+                    <Navigator/>
+                    <Home/>
                 </Route>
                 <Route exact path="/calender">
                     <Navigator/>
@@ -28,9 +33,13 @@ function App() {
                     <Navigator/>
                     <Projects/>
                 </Route>
+                <Route exact path="/projects/new">
+                    <Navigator/>
+                    <Newproject/>
+                </Route>
                 <Route exact path="/profile">
                     <Navigator/>
-                    Profile
+                    <Profile/>
                 </Route>
                 <Route exact path="/timesheet">
                     <Navigator/>

@@ -1,3 +1,12 @@
+.focus
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
 .focus select 
 {
     background-color: aquamarine;

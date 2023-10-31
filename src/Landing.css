@@ -1,0 +1,48 @@
+.landing
+{
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--main-color);
+    text-align: center;
+    color: white;
+}
+
+.landing .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.landing h1
+{
+    font-size: 60px;
+}
+
+.landing a
+{
+    background-color: white;
+    color: var(--main-color);
+    padding: 12px 24px;
+    border-radius: 25px;
+    transition: 0.5s;
+    cursor: pointer;
+    width: fit-content; 
+}
+
+.landing a:hover
+{
+    padding: 12px 48px;
+}
+
+@media (max-width: 768px) { 
+    .landing h1
+    {
+        font-size: 30px;
+    }
+}
