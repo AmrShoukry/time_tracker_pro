@@ -6,6 +6,8 @@ import MyTimesheet from './Timesheet';
 import Logout from './Logout';
 import Login from './Login';
 import Signup from './Signup';
+import Projects from './Projects';
+import Focus from './Focus';
 
 function App() {
   return (
@@ -24,7 +26,7 @@ function App() {
                 </Route>
                 <Route exact path="/projects">
                     <Navigator/>
-                    Projects
+                    <Projects/>
                 </Route>
                 <Route exact path="/profile">
                     <Navigator/>
@@ -36,7 +38,7 @@ function App() {
                 </Route>
                 <Route exact path="/focus">
                     <Navigator/>
-                    Focus Mode
+                    <Focus/>
                 </Route>
                 <Route exact path="/login">
                     <Login/>

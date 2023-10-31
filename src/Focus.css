@@ -1,0 +1,109 @@
+.focus select 
+{
+    background-color: aquamarine;
+    border: 0;
+    padding: 12px;
+}
+
+.focus select::after
+{
+    content: "S";
+    margin-right: 55px;
+}
+
+.focus select:focus
+{
+    outline: 0;
+}
+
+.focus select option
+{
+    background-color: aqua;
+    margin-bottom: 5px;
+    border: 5px solid gold;
+}
+
+.focus select option:hover
+{
+    background-color: brown;
+}
+
+.focus ul
+{
+    padding: 0;
+    max-height: 300px;
+    overflow: scroll;
+    width: 95%;
+    transform: translateX(calc(2.5% + 5px));
+}
+
+.focus p.selected
+{
+    padding: 24px;
+    background-color: var(--active-color);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.focus p.selected svg
+{
+    fill: white;
+}
+
+.focus ul
+{
+    margin: 0;
+}
+
+.focus ul li 
+{
+    list-style-type: none;
+    background-color: var(--main-color-transparent);
+    padding: 24px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.focus ul li:hover
+{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.focus input[type='number']
+{
+    border: 2px solid var(--main-color-transparent);
+    transition: 0.5s;
+}
+
+.focus input[type='number']:focus
+{
+    outline: none;
+    border: 2px solid var(--main-color);
+}
+
+.focus input[type='submit']
+{
+    margin-top: 24px;
+    border: none;
+    padding: 12px 24px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.focus input[type='submit']:hover
+{
+    padding: 12px 48px;
+}
+
+#task
+{
+    display: none;
+}

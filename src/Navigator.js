@@ -28,20 +28,20 @@ const Navigator = () => {
         {
             customNavWidth = '50px'
             document.documentElement.style.setProperty('--nav-width', customNavWidth);
-            document.body.style.paddingLeft = '60px';
+            document.body.style.paddingLeft = '50px';
         }
         else
         {
             if (windowWidth > 992) {
                 customNavWidth = '250px'
                 document.documentElement.style.setProperty('--nav-width', customNavWidth);
-                document.body.style.paddingLeft = '260px';
+                document.body.style.paddingLeft = '250px';
               } else if (windowWidth > 768) {
                 customNavWidth = '210px'
                 document.documentElement.style.setProperty('--nav-width', customNavWidth);
-                document.body.style.paddingLeft = '220px';
+                document.body.style.paddingLeft = '210px';
               } else {
-                document.body.style.paddingLeft = '60px';
+                document.body.style.paddingLeft = '50px';
               }      
         }
       }, [windowWidth]);
@@ -55,7 +55,7 @@ const Navigator = () => {
             setToggle('close')
             customNavWidth = '50px'
             document.documentElement.style.setProperty('--nav-width', customNavWidth);
-            document.body.style.paddingLeft = '60px';
+            document.body.style.paddingLeft = '50px';
         }
         else
         {
@@ -64,7 +64,7 @@ const Navigator = () => {
             {
                 customNavWidth = '250px'
                 document.documentElement.style.setProperty('--nav-width', customNavWidth);
-                document.body.style.paddingLeft = '260px';
+                document.body.style.paddingLeft = '250px';
             }
         }
     }
@@ -78,20 +78,20 @@ const Navigator = () => {
             {
                 customNavWidth = '250px'
                 document.documentElement.style.setProperty('--nav-width', customNavWidth);    
-                document.body.style.paddingLeft = '260px';
+                document.body.style.paddingLeft = '250px';
             }
             else
             {
                 customNavWidth = '210px'
                 document.documentElement.style.setProperty('--nav-width', customNavWidth);    
-                document.body.style.paddingLeft = '220px'
+                document.body.style.paddingLeft = '210px'
             }
         }
         else
         {
             customNavWidth = '50px'
             document.documentElement.style.setProperty('--nav-width', customNavWidth);    
-            document.body.style.paddingLeft = '60px';
+            document.body.style.paddingLeft = '50px';
         }
     }, []);
 
