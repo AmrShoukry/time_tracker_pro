@@ -24,21 +24,34 @@
     font-size: 60px;
 }
 
+
+.landing .buttons
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
 .landing a
 {
     background-color: white;
     color: var(--main-color);
-    padding: 12px 24px;
     border-radius: 25px;
     transition: 0.5s;
     cursor: pointer;
-    width: fit-content; 
+    display: block;
+    width: 200px;
+    padding: 12px 24px;
 }
 
 .landing a:hover
 {
     padding: 12px 48px;
+    width: 248px;
 }
+
 
 @media (max-width: 768px) { 
     .landing h1
