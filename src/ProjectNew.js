@@ -10,6 +10,7 @@ const Newproject = () => {
     {
         e.preventDefault()
         let form = e.target.parentNode
+        let headlineElement = form.querySelector('input[type="text"]')
         let from = form.querySelector('#from').value;
         let to = form.querySelector('#to').value;
 
@@ -19,8 +20,14 @@ const Newproject = () => {
             return
         }
 
+        if (headlineElement.value.trim().length < 2)
+        {
+            alert("You have to write a valid headline!")
+            return
+        }
+
         let user_id = 1
-        let headline = form.querySelector('input[type="text"]').value;
+        let headline = headlineElement.value;
         let body = form.querySelector('textarea').value;
         let completed = 0;
         let late = hasExccededDeadline(to) ? 1 : 0;
@@ -46,7 +53,7 @@ const Newproject = () => {
                 <h1>Add a new Project</h1>
                 <form action="" id="new">
                     <div className="inputs">
-                        <input type="text" placeholder='Headline...' id="head" required/>
+                        <input type="text" placeholder='Headline...' id="head" required minlength="2"/>
                         <textarea name="" id="" cols="30" rows="10" placeholder='Body ...'></textarea>
                         <div className="dates">
                             <input type="datetime-local" placeholder='From ...' id="from" required/>
